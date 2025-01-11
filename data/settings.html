@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>DONE</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form action='/settings' method='post'>
+		<h1>SETTINGS</h1>
+		<div class='form-floating'>
+			<label>Text</label>
+			<input type='text' class='form-control' name='text' placeholder='insert text' value="#text#" maxlength="50">
+		</div>
+		<div class='form-floating'>
+			<label>Effect</label>
+			<select class='form-control' name='effect'>
+				<option value='l'>liquid pixel</option>
+				<option value='x'>text</option>
+				<option value='s'>text scroll</option>
+				<option value='r'>rainbow</option>
+				<option value='f'>flames</option>
+				<option value='p'>pixel run</option>
+			</select>
+			<script>
+				document.querySelector('select[name=effect]').value = "#effect#";
+			</script>
+		</div>
+		<div class='form-floating'>
+			<label>Brightness</label>
+			<select class='form-control' name='brightness'>
+				<option value='16'>16</option>
+				<option value='32'>32</option>
+				<option value='64'>64</option>
+				<option value='96'>96</option>
+				<option value='128'>238</option>
+				<option value='160'>160</option>
+				<option value='196'>196</option>
+				<option value='228'>228</option>
+				<option value='255'>255</option>
+			</select>
+			<script>
+				document.querySelector('select[name=brightness]').value = "#brightness#";
+			</script>
+		</div>
+		<div class='form-floating'>
+			<label>Color</label>
+			<input type='color' class='form-control' name='color' placeholder='color' value="#color#">
+		</div>		
+		<button type='submit'>save</button>
+	</form>
+	<a href='/' class='back'>&#8592; back to home</a>
+
+</body>
+</html>

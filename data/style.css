@@ -1,0 +1,96 @@
+*,::after,::before {
+    box-sizing: border-box;
+    font-family: 'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans','Liberation Sans';
+    line-height: 1.5;
+}
+
+html,body {
+    padding: 0;
+    margin: 0;
+    font-size: 5vw;
+    background:#111;
+}
+
+body {
+    color: greenyellow;
+    background-color: #111;
+    padding: 1rem;
+    text-align: center;
+}
+
+p {
+    padding: 0;
+    margin: 2rem 0
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: .5vw
+}
+
+form {
+    padding: 1rem;
+    border-radius: .3rem;
+    margin-bottom: 2rem;
+    background: #222;
+}
+
+button, .btn {
+    background: green;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 3rem;
+    padding: 0 1rem;
+    border-radius: .3rem;
+    width: 55%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: .5vw
+}
+
+select,input {
+    display: inline-block;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 0 .5rem;
+    margin: 0;
+    border-radius: .3rem;
+    border: .1vw solid greenyellow;
+    background-color: #222;
+    color: greenyellow;
+    height: 2rem;
+}
+select:focus,input:focus {
+    outline:1vw solid greenyellow;
+    background-color: #222;
+    
+}
+.form-floating {
+    margin: 0 0 2rem 0;
+}
+
+label {
+    padding: 0;
+    margin: 0;
+    line-height: 1.5rem;
+    font-weight: bold;
+    font-size: .8rem;
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+}
+
+.back {
+    text-decoration: none;
+    color: #eee
+}
